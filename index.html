@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Punto Dulce - Información</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -10,7 +11,7 @@
 <header class="navbar">
   <img src="img/logo.png" class="logo">
 
-  <nav>
+  <nav class="nav-links">
     <a href="menu.html">Menú</a>
     <a href="index.html" class="active">Información</a>
   </nav>
@@ -23,9 +24,10 @@
 <section class="container">
 
   <h1>Información y Pagos</h1>
-  <p>Gracias por apoyar lo local 💕</p>
+  <p class="subtitle">Gracias por apoyar lo local 💕</p>
 
-  <div class="grid">
+  <!-- CONTENEDOR VERTICAL -->
+  <div class="info-list">
 
     <!-- PAGOS -->
     <div class="card">
@@ -34,26 +36,28 @@
       <p>Cuenta a nombre de:<br>
       <strong>Jorge Esteban Vivas Carrasco</strong></p>
 
-      <p><strong>CLABE (Banco NU)</strong></p>
+      <p class="label">CLABE (Banco NU)</p>
 
       <div class="copy-box">
         <span id="clabe">638180000140779363</span>
         <button onclick="copiar()">📋</button>
       </div>
 
-      <small>Toca el botón para copiar</small>
+      <small class="hint">Toca el botón para copiar</small>
     </div>
 
     <!-- CONTACTO -->
     <div class="card">
       <h3>📱 Contáctanos</h3>
 
-      <a href="https://wa.me/5215545903148" class="btn">
+      <a href="https://wa.me/5215545903148" class="btn full">
         Enviar mensaje
       </a>
 
-      <p>Teléfono:<br>
-      <strong>5545903148</strong></p>
+      <p class="phone">
+        Teléfono:<br>
+        <strong>5545903148</strong>
+      </p>
     </div>
 
     <!-- UBICACIÓN -->
@@ -61,23 +65,23 @@
       <h3>📍 Ubicación</h3>
 
       <iframe 
-        src="https://www.google.com/maps/@19.3474573,-98.9720983,64m/data=!3m1!1e3!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D"
+        src="https://www.google.com/maps?q=El+Punto+Dulce&output=embed"
         width="100%" 
-        height="200" 
-        style="border:0; border-radius:15px;">
+        height="250"
+        class="map">
       </iframe>
 
-      <br><br>
-
-      <a href="https://maps.app.goo.gl/kTHkG2x5fDJQNCCw5" target="_blank" class="btn-secondary">
+      <a href="https://maps.app.goo.gl/kTHkG2x5fDJQNCCw5" 
+         target="_blank" 
+         class="btn-secondary full">
         Ver en Google Maps
       </a>
     </div>
 
-    <!-- MASCOTA / BRANDING -->
-    <div class="card">
+    <!-- MASCOTA -->
+    <div class="card center">
       <img src="img/mascota.png" class="mascota">
-      <p style="text-align:center;">Hecho con 💕 para endulzar tu día</p>
+      <p class="footer-text">Hecho con 💕 para endulzar tu día</p>
     </div>
 
   </div>
