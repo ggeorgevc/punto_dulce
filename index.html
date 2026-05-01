@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Punto Dulce - Información</title>
+  <title>Punto Dulce - Inicio</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -12,8 +12,9 @@
   <img src="img/logo.png" class="logo">
 
   <nav class="nav-links">
+    <a href="index.html" class="active">Inicio</a>
     <a href="menu.html">Menú</a>
-    <a href="index.html" class="active">Información</a>
+    <a href="payment.html">Pagos</a>
   </nav>
 
   <a href="https://wa.me/5215545903148" class="btn">
@@ -23,49 +24,43 @@
 
 <section class="container">
 
-  <h1>Información y Pagos</h1>
-  <p class="subtitle">Gracias por apoyar lo local 💕</p>
+  <!-- PORTADA -->
+  <div class="hero">
+    <img src="img/pd.png" class="logo" alt="Punto Dulce">
+  </div>
 
-  <!-- CONTENEDOR VERTICAL -->
-  <div class="info-list">
+  <h1>El Punto Dulce</h1>
+  <p class="subtitle">Un lugar hecho con amor 💕</p>
 
-    <!-- PAGOS -->
+    
+
     <div class="card">
-      <h3>💳 Pagos por transferencia</h3>
+      <p class="description" style="text-align: center;">
+        En <strong>Punto Dulce</strong> nos hace felices preparar cada postre con amor y dedicación.
+        Disfruta de nuestras crepas, postres y antojitos hechos con ingredientes de calidad,
+        pensados para endulzar tu día y compartir momentos especiales.
+      </p>
+  
+      <p class="schedule" style="text-align: center;">
+        🕒 <strong >Horario:</strong><br>
+        Viernes y sábados de 7:00 pm a 11:00 pm
+      </p>
+      <h3 style="text-align: center;">📱 Contacto</h3>
 
-      <p>Cuenta a nombre de:<br>
-      <strong>Jorge Esteban Vivas Carrasco</strong></p>
+      
 
-      <p class="label">CLABE (Banco NU)</p>
-
-      <div class="copy-box">
-        <span id="clabe">638180000140779363</span>
-        <button onclick="copiar()">📋</button>
-      </div>
-
-      <small class="hint">Toca el botón para copiar</small>
-    </div>
-
-    <!-- CONTACTO -->
-    <div class="card">
-      <h3>📱 Contáctanos</h3>
-
-      <a href="https://wa.me/5215545903148" class="btn full">
-        Enviar mensaje
-      </a>
-
-      <p class="phone">
+      <p class="phone" style="text-align: center;">
         Teléfono:<br>
         <strong>5545903148</strong>
       </p>
-    </div>
-
-    <!-- UBICACIÓN -->
-    <div class="card">
-      <h3>📍 Ubicación</h3>
+      <a href="https://wa.me/5215545903148" class="btn btn-center">
+        Enviar whatsapp
+      </a>
+      <h3 style="text-align: center;">📍 Ubicación</h3>
 
       <iframe 
-        src="https://www.google.com/maps?q=El+Punto+Dulce&output=embed"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d558.1798564072957!2d-98.97212088326918!3d19.347642024707334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e3005ec71bc7%3A0x47919a08955aaadc!2sEl%20Punto%20Dulce!5e1!3m2!1ses-419!2smx!4v1777666731243!5m2!1ses-419!2smx"
+      
         width="100%" 
         height="250"
         class="map">
@@ -78,11 +73,12 @@
       </a>
     </div>
 
-    <!-- MASCOTA -->
-    <div class="card center">
-      <img src="img/mascota.png" class="mascota">
-      <p class="footer-text">Hecho con 💕 para endulzar tu día</p>
+    <!-- UBICACIÓN -->
+    
+     
     </div>
+
+ 
 
   </div>
 

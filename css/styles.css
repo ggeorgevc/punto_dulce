@@ -195,5 +195,10 @@ h1 {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
+  .btn-center {
+    width: auto;
+    display: block;
+    margin: 15px auto;
+  }
 
 }
